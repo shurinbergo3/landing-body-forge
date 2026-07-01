@@ -14,21 +14,21 @@ export function middleware(req: NextRequest) {
     return;
   }
 
-  // /ru живёт на чистом адресе - убираем префикс редиректом, чтобы не было дубля.
-  if (pathname === "/ru" || pathname.startsWith("/ru/")) {
+  // /en живёт на чистом адресе - убираем префикс редиректом, чтобы не было дубля.
+  if (pathname === "/en" || pathname.startsWith("/en/")) {
     const url = req.nextUrl.clone();
     url.pathname = pathname.slice(3) || "/";
     return NextResponse.redirect(url);
   }
 
-  // Английская версия остаётся с префиксом /en.
-  if (pathname === "/en" || pathname.startsWith("/en/")) {
+  // Русская версия остаётся с префиксом /ru.
+  if (pathname === "/ru" || pathname.startsWith("/ru/")) {
     return;
   }
 
-  // Всё остальное отдаём русской версией, не меняя адрес в браузере.
+  // Всё остальное отдаём английской версией, не меняя адрес в браузере.
   const url = req.nextUrl.clone();
-  url.pathname = `/ru${pathname === "/" ? "" : pathname}`;
+  url.pathname = `/en${pathname === "/" ? "" : pathname}`;
   return NextResponse.rewrite(url);
 }
 

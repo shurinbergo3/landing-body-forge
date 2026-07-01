@@ -52,6 +52,14 @@ export default function Nav({ dict, locale }: { dict: Dict; locale: string }) {
               </a>
             </li>
           ))}
+          <li>
+            <Link
+              href={dict.blog.href}
+              className="rounded-full px-3.5 py-2 text-[14px] text-ash-300 transition-colors hover:text-white"
+            >
+              {dict.blog.nav}
+            </Link>
+          </li>
         </ul>
 
         <div className="flex items-center gap-2">

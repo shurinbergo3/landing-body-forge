@@ -96,6 +96,30 @@ export type Dict = {
     title: string;
     items: { q: string; a: string }[];
   };
+  reviews: {
+    eyebrow: string;
+    title: string;
+    sub: string;
+    ratingLabel: string;
+  };
+  blog: {
+    nav: string;
+    href: string;
+    eyebrow: string;
+    title: string;
+    subtitle: string;
+    allTag: string;
+    readSuffix: string;
+    updated: string;
+    backToBlog: string;
+    tocTitle: string;
+    faqTitle: string;
+    relatedTitle: string;
+    shareTitle: string;
+    ctaTitle: string;
+    ctaText: string;
+    ctaButton: string;
+  };
   footer: {
     tagline: string;
     columns: { title: string; links: { label: string; href: string }[] }[];
@@ -461,6 +485,30 @@ const ru: Dict = {
       },
     ],
   },
+  reviews: {
+    eyebrow: "Отзывы",
+    title: "Что говорят в App Store",
+    sub: "Живые оценки пользователей - подтягиваются прямо из App Store.",
+    ratingLabel: "средняя оценка на основе {count} отзывов в App Store",
+  },
+  blog: {
+    nav: "Блог",
+    href: "/ru/blog",
+    eyebrow: "Журнал Body Forge",
+    title: "Как тренироваться так, чтобы это работало",
+    subtitle: "Разборы прогрессии, восстановления и техники без воды. Пиши каждый подход, читай своё тело по данным и не топчись на месте.",
+    allTag: "Все статьи",
+    readSuffix: "мин чтения",
+    updated: "Обновлено",
+    backToBlog: "Все статьи",
+    tocTitle: "В этой статье",
+    faqTitle: "Частые вопросы",
+    relatedTitle: "Читать дальше",
+    shareTitle: "Поделиться",
+    ctaTitle: "Хватит тренироваться на память",
+    ctaText: "Body Forge пишет каждый подход, ведёт прогрессию и держит тебя в курсе восстановления. Бесплатно, без рекламы и навязанных подписок.",
+    ctaButton: "Скачать в App Store",
+  },
   footer: {
     tagline: "Сила · Данные · Дисциплина",
     columns: [
@@ -469,6 +517,7 @@ const ru: Dict = {
         links: [
           { label: "Возможности", href: "#features" },
           { label: "AI-тренер", href: "#ai" },
+          { label: "Блог", href: "/ru/blog" },
           { label: "Экосистема", href: "#ecosystem" },
           { label: "Вопросы", href: "#faq" },
         ],
@@ -847,6 +896,30 @@ const en: Dict = {
       },
     ],
   },
+  reviews: {
+    eyebrow: "Reviews",
+    title: "What people say on the App Store",
+    sub: "Real ratings from users - pulled straight from the App Store.",
+    ratingLabel: "average rating from {count} App Store reviews",
+  },
+  blog: {
+    nav: "Blog",
+    href: "/blog",
+    eyebrow: "The Body Forge Journal",
+    title: "How to train so it actually works",
+    subtitle: "No-fluff breakdowns of progression, recovery and technique. Log every set, read your body from the data and stop spinning your wheels.",
+    allTag: "All posts",
+    readSuffix: "min read",
+    updated: "Updated",
+    backToBlog: "All posts",
+    tocTitle: "In this article",
+    faqTitle: "Frequently asked",
+    relatedTitle: "Keep reading",
+    shareTitle: "Share",
+    ctaTitle: "Stop training from memory",
+    ctaText: "Body Forge logs every set, drives your progression and keeps you honest about recovery. Free, no ads, no forced subscriptions.",
+    ctaButton: "Download on the App Store",
+  },
   footer: {
     tagline: "Strength · Data · Discipline",
     columns: [
@@ -855,6 +928,7 @@ const en: Dict = {
         links: [
           { label: "Features", href: "#features" },
           { label: "AI Coach", href: "#ai" },
+          { label: "Blog", href: "/blog" },
           { label: "Ecosystem", href: "#ecosystem" },
           { label: "FAQ", href: "#faq" },
         ],

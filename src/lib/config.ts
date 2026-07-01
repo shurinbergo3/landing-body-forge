@@ -3,6 +3,8 @@
 // Если появится отдельный маркетинговый домен/почта поддержки — поменять здесь.
 export const APP_ID = "6761138589";
 
+export const SITE_URL = "https://bodyforges.com";
+
 export const APP_STORE_URL: Record<string, string> = {
   ru: `https://apps.apple.com/ru/app/id${APP_ID}`,
   en: `https://apps.apple.com/us/app/id${APP_ID}`,

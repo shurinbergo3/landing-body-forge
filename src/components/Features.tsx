@@ -7,13 +7,12 @@ import Reveal from "./Reveal";
 
 const ease = [0.16, 1, 0.3, 1] as const;
 
-// раскладка плиток bento: первая крупнее
-const span = [
-  "sm:col-span-2 lg:row-span-2",
-  "",
-  "",
-  "sm:col-span-2",
-];
+// иконки по группам, в порядке плиток словаря (язык не важен - эмодзи одни)
+const icons: Record<string, string[]> = {
+  training: ["📝", "📋", "🏆", "⏱"],
+  health: ["❤️", "🎯", "🌙", "📐"],
+  progress: ["📈", "🔥", "🎖", "📚"],
+};
 
 export default function Features({ dict }: { dict: Dict }) {
   const [active, setActive] = useState(dict.features.groups[0].id);
@@ -59,7 +58,7 @@ export default function Features({ dict }: { dict: Dict }) {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -12 }}
               transition={{ duration: 0.45, ease }}
-              className="grid auto-rows-[minmax(200px,auto)] grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3"
+              className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4"
             >
               {group.tiles.map((t, i) => (
                 <motion.article
@@ -67,18 +66,21 @@ export default function Features({ dict }: { dict: Dict }) {
                   initial={{ opacity: 0, y: 22 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.55, ease, delay: 0.05 + i * 0.07 }}
-                  className={`card group relative flex flex-col justify-between overflow-hidden p-7 transition-colors duration-300 hover:border-white/12 ${span[i] ?? ""}`}
+                  className="card group relative flex h-full flex-col overflow-hidden p-6 transition-colors duration-300 hover:border-white/12"
                 >
                   <div className="glow-volt absolute -right-16 -top-16 h-40 w-40 opacity-0 blur-2xl transition-opacity duration-500 group-hover:opacity-100" />
-                  <span className="eyebrow !text-ash-400">{t.tag}</span>
-                  <div className="mt-auto pt-10">
-                    <h3 className="text-[clamp(1.25rem,2vw,1.6rem)] font-semibold tracking-tight text-white">
-                      {t.title}
-                    </h3>
-                    <p className="mt-2.5 max-w-md text-[15px] leading-relaxed text-ash-400">
-                      {t.text}
-                    </p>
-                  </div>
+                  <span className="grid h-12 w-12 place-items-center rounded-2xl bg-volt/12 text-2xl">
+                    {icons[group.id]?.[i] ?? "▹"}
+                  </span>
+                  <span className="mt-5 text-[11px] font-semibold uppercase tracking-[0.14em] text-ash-400">
+                    {t.tag}
+                  </span>
+                  <h3 className="mt-2 text-[1.2rem] font-semibold leading-tight tracking-tight text-white">
+                    {t.title}
+                  </h3>
+                  <p className="mt-2.5 text-[14px] leading-relaxed text-ash-400">
+                    {t.text}
+                  </p>
                 </motion.article>
               ))}
             </motion.div>

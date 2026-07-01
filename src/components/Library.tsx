@@ -12,8 +12,15 @@ const tints = [
   "bg-orange-brand/15 text-orange-brand",
 ];
 
-export default function Library({ dict }: { dict: Dict }) {
+export default function Library({
+  dict,
+  locale,
+}: {
+  dict: Dict;
+  locale: string;
+}) {
   const l = dict.library;
+  const vid = locale === "ru" ? "library-ru" : "library-en";
   return (
     <section
       id="library"
@@ -33,7 +40,12 @@ export default function Library({ dict }: { dict: Dict }) {
 
         <div className="mt-14 grid items-center gap-12 lg:grid-cols-[0.8fr_1fr]">
           <Reveal className="order-2 mx-auto w-[clamp(14rem,34vw,18rem)] lg:order-1">
-            <PhoneFrame src="/screens/library.png" alt={l.title} glow />
+            <PhoneFrame
+              video={`/video/${vid}.mp4`}
+              poster={`/video/${vid}-poster.jpg`}
+              alt={l.title}
+              glow
+            />
           </Reveal>
 
           <div className="order-1 lg:order-2">

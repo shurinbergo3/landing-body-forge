@@ -438,9 +438,9 @@ const ru: Dict = {
   },
   active: {
     eyebrow: "Живая тренировка",
-    title: "От гантели до данных -",
-    accentWord: "ноль трения",
-    sub: "С момента, как взял вес, до момента, как поставил - только ты, штанга и цифры. Никаких лишних касаний.",
+    title: "Записывай подход",
+    accentWord: "за секунду",
+    sub: "Вес, повторы и отдых - в пару касаний. Прошлая сессия уже перед глазами, таймер считает сам. Телефон не крадёт тренировку.",
     points: [
       {
         title: "Прошлая сессия перед глазами",
@@ -988,9 +988,9 @@ const en: Dict = {
   },
   active: {
     eyebrow: "Live workout",
-    title: "From the iron to the data -",
-    accentWord: "zero friction",
-    sub: "From the moment you grip the bar to the moment you rack it - just you, the iron and the numbers. No wasted taps.",
+    title: "Log a set in",
+    accentWord: "one second",
+    sub: "Weight, reps and rest in a couple of taps. Last session is already on screen, the timer counts itself. The phone never steals your workout.",
     points: [
       {
         title: "Last session in front of you",

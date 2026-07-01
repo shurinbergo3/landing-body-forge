@@ -16,6 +16,7 @@ import Programs from "@/components/Programs";
 import Ecosystem from "@/components/Ecosystem";
 import Progress from "@/components/Progress";
 import Gallery from "@/components/Gallery";
+import BlogTeaser from "@/components/BlogTeaser";
 import DownloadCTA from "@/components/DownloadCTA";
 import FAQ from "@/components/FAQ";
 import Reviews from "@/components/Reviews";
@@ -108,13 +109,14 @@ export default async function Home({
         <ActiveShowcase dict={dict} />
         <AICoach dict={dict} />
         <Purpose dict={dict} />
-        <Library dict={dict} />
+        <Library dict={dict} locale={locale} />
         <Programs dict={dict} />
         <Progress dict={dict} />
         <Ecosystem dict={dict} locale={locale} />
         <Stats dict={dict} />
         <Gallery dict={dict} locale={locale} />
         <Reviews dict={dict} reviews={reviews} rating={rating} />
+        <BlogTeaser dict={dict} locale={locale} />
         <DownloadCTA dict={dict} locale={locale} />
         <FAQ dict={dict} />
       </main>

@@ -1,6 +1,10 @@
 export const privacyLocales = ["en", "ru", "de", "pl"] as const;
 export type PrivacyLocale = (typeof privacyLocales)[number];
 
+export function isPrivacyLocale(value: string): value is PrivacyLocale {
+  return (privacyLocales as readonly string[]).includes(value);
+}
+
 export const privacyLangLabels: Record<PrivacyLocale, string> = {
   en: "English",
   ru: "Русский",
@@ -34,6 +38,7 @@ export type PrivacyDoc = {
   updatedLabel: string;
   updatedDate: string;
   backLabel: string;
+  langNavLabel: string;
   contactTitle: string;
   sections: Section[];
 };
@@ -45,6 +50,7 @@ const en: PrivacyDoc = {
   updatedLabel: "Last updated",
   updatedDate: "January 19, 2026",
   backLabel: "Back to home",
+  langNavLabel: "Choose language",
   contactTitle: "Questions?",
   sections: [
     {
@@ -165,6 +171,7 @@ const ru: PrivacyDoc = {
   updatedLabel: "Обновлено",
   updatedDate: "19 января 2026",
   backLabel: "На главную",
+  langNavLabel: "Выбор языка",
   contactTitle: "Остались вопросы?",
   sections: [
     {
@@ -288,6 +295,7 @@ const de: PrivacyDoc = {
   updatedLabel: "Zuletzt aktualisiert",
   updatedDate: "19. Januar 2026",
   backLabel: "Zur Startseite",
+  langNavLabel: "Sprache wählen",
   contactTitle: "Noch Fragen?",
   sections: [
     {
@@ -411,6 +419,7 @@ const pl: PrivacyDoc = {
   updatedLabel: "Ostatnia aktualizacja",
   updatedDate: "19 stycznia 2026",
   backLabel: "Na stronę główną",
+  langNavLabel: "Wybór języka",
   contactTitle: "Masz pytania?",
   sections: [
     {

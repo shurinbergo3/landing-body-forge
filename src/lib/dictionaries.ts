@@ -477,7 +477,7 @@ const ru: Dict = {
         title: "Поддержка",
         links: [
           { label: "Написать в поддержку", href: "mailto:alex@buildbyalex.com" },
-          { label: "Политика конфиденциальности", href: "/ru/privacy" },
+          { label: "Политика конфиденциальности", href: "/privacy/ru" },
           { label: "App Store", href: "https://apps.apple.com/ru/app/id6761138589" },
         ],
       },
@@ -863,7 +863,7 @@ const en: Dict = {
         title: "Support",
         links: [
           { label: "Contact support", href: "mailto:alex@buildbyalex.com" },
-          { label: "Privacy Policy", href: "/en/privacy" },
+          { label: "Privacy Policy", href: "/privacy/en" },
           { label: "App Store", href: "https://apps.apple.com/us/app/id6761138589" },
         ],
       },

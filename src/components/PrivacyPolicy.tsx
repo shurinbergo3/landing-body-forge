@@ -1,6 +1,3 @@
-"use client";
-
-import { useState } from "react";
 import Link from "next/link";
 import {
   privacyDocs,
@@ -26,13 +23,12 @@ function ArrowUpRight() {
 }
 
 export default function PrivacyPolicy({
-  initial,
+  lang,
   homeHref,
 }: {
-  initial: PrivacyLocale;
+  lang: PrivacyLocale;
   homeHref: string;
 }) {
-  const [lang, setLang] = useState<PrivacyLocale>(initial);
   const doc = privacyDocs[lang];
 
   return (
@@ -80,15 +76,19 @@ export default function PrivacyPolicy({
             </div>
           </header>
 
-          {/* переключатель языков */}
-          <div className="mt-10 flex flex-wrap items-center gap-1.5 rounded-full border border-white/[0.08] bg-white/[0.02] p-1.5 sm:inline-flex">
+          {/* переключатель языков - отдельная ссылка на каждый язык */}
+          <nav
+            aria-label={doc.langNavLabel}
+            className="mt-10 flex flex-wrap items-center gap-1.5 rounded-full border border-white/[0.08] bg-white/[0.02] p-1.5 sm:inline-flex"
+          >
             {privacyLocales.map((l) => {
               const active = l === lang;
               return (
-                <button
+                <Link
                   key={l}
-                  onClick={() => setLang(l)}
-                  aria-pressed={active}
+                  href={`/privacy/${l}`}
+                  hrefLang={l}
+                  aria-current={active ? "page" : undefined}
                   className={`rounded-full px-4 py-2 text-[13px] font-medium transition-all duration-300 ease-apple ${
                     active
                       ? "bg-volt text-black shadow-[0_6px_24px_-8px_rgba(191,255,0,0.6)]"
@@ -97,10 +97,10 @@ export default function PrivacyPolicy({
                 >
                   <span className="hidden sm:inline">{privacyLangLabels[l]}</span>
                   <span className="sm:hidden">{privacyLangShort[l]}</span>
-                </button>
+                </Link>
               );
             })}
-          </div>
+          </nav>
 
           {/* содержание */}
           <div className="mt-14 space-y-14">

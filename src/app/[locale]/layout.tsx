@@ -15,7 +15,7 @@ export async function generateMetadata({
   const { locale } = await params;
   const dict = getDict(locale);
   return {
-    metadataBase: new URL("https://bodyforge.app"),
+    metadataBase: new URL("https://bodyforges.com"),
     title: dict.meta.title,
     description: dict.meta.description,
     openGraph: {

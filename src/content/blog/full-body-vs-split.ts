@@ -69,7 +69,7 @@ const post: BlogPost = {
 
 - Готовые программы: сплиты, суперсеты, силовые, круговые. Или собери свою под свой график.
 - Журнал подходов пишет вес, повторы и отдых в реальном времени, а стрелки роста сравнивают с прошлой сессией - так ты видишь недельный объём и прогрессию, а не гадаешь.
-- 680 упражнений с техникой и видео, если решишь заменить движение в своей схеме.
+- 640+ упражнений с техникой и видео, если решишь заменить движение в своей схеме.
 - Таймер отдыха в Dynamic Island держит плотность тренировки, что особенно важно на длинных фулбоди-сессиях.
 
 Ни рекламы, ни навязанных подписок. Просто программа, которую видно целиком, и данные, по которым понятно, работает она или нет.
@@ -164,7 +164,7 @@ Choosing the split is half the job; running it without gaps is the other half. [
 
 - Ready-made programs: splits, supersets, strength, circuits. Or build your own around your schedule.
 - The set log records weight, reps, and rest in real time, and growth arrows compare against last session - so you can see your weekly volume and progression instead of guessing.
-- 680 exercises with form cues and video if you want to swap a movement in your split.
+- 640+ exercises with form cues and video if you want to swap a movement in your split.
 - The rest timer in the Dynamic Island keeps your sessions tight, which matters most on those longer full-body days.
 
 No ads, no forced subscriptions. Just a program you can see in full and data that tells you whether it's working.

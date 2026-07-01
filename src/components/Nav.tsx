@@ -19,15 +19,15 @@ export default function Nav({ dict, locale }: { dict: Dict; locale: string }) {
   }, []);
 
   return (
-    <div className="fixed inset-x-0 top-0 z-50 flex justify-center px-4 pt-3 sm:pt-4">
+    <div className="fixed inset-x-0 top-0 z-50 flex justify-center px-3 pt-3 sm:px-4 sm:pt-4">
       <nav
-        className={`flex w-full max-w-container items-center justify-between rounded-full px-3 py-2 transition-all duration-300 ease-apple sm:px-4 ${
+        className={`flex w-full max-w-container items-center justify-between gap-2 rounded-full px-2.5 py-2 transition-all duration-300 ease-apple sm:px-4 ${
           scrolled
             ? "glass"
             : "border border-transparent bg-transparent"
         }`}
       >
-        <Link href={localePath(locale)} className="flex items-center gap-2.5 pl-1">
+        <Link href={localePath(locale)} className="flex min-w-0 items-center gap-2 pl-0.5 sm:gap-2.5 sm:pl-1">
           <Image
             src="/logo/logo.png"
             alt="Body Forge"
@@ -36,7 +36,7 @@ export default function Nav({ dict, locale }: { dict: Dict; locale: string }) {
             className="rounded-[10px]"
             priority
           />
-          <span className="text-[15px] font-bold tracking-tight text-white">
+          <span className="hidden truncate text-[15px] font-bold tracking-tight text-white min-[360px]:inline">
             BODY<span className="text-volt">FORGE</span>
           </span>
         </Link>
@@ -62,11 +62,11 @@ export default function Nav({ dict, locale }: { dict: Dict; locale: string }) {
           </li>
         </ul>
 
-        <div className="flex items-center gap-2">
+        <div className="flex shrink-0 items-center gap-2">
           <Link
             href={localePath(other)}
             aria-label={dict.nav.langLabel}
-            className="rounded-full border border-white/12 px-3 py-2 text-[13px] font-medium text-ash-300 transition-colors hover:border-white/25 hover:text-white"
+            className="rounded-full border border-white/12 px-2.5 py-2 text-[13px] font-medium text-ash-300 transition-colors hover:border-white/25 hover:text-white sm:px-3"
           >
             {dict.nav.langLabel}
           </Link>
@@ -74,7 +74,7 @@ export default function Nav({ dict, locale }: { dict: Dict; locale: string }) {
             href={storeUrl(locale)}
             target="_blank"
             rel="noopener noreferrer"
-            className="btn-volt !px-5 !py-2 text-[14px]"
+            className="btn-volt !px-4 !py-2 text-[14px] sm:!px-5"
           >
             {dict.nav.download}
           </a>

@@ -66,7 +66,7 @@ Body Forge не спрашивает, где ты тренируешься. Он
 
 - **Журнал подходов в реальном времени.** Вес, повторы, отдых - фиксируешь мгновенно, хоть с гантелями на балконе, хоть со штангой в зале. Стрелки роста сразу сравнивают текущий подход с прошлой сессией.
 - **Полностью офлайн.** Данные пишутся на устройство сразу, без сети. Тренируешься дома без вайфая или в подвальном зале без связи - всё равно всё записано, синк уедет в облако позже.
-- **680 упражнений с техникой и видео.** В том числе куча движений с собственным весом и гантелями - как раз то, что нужно домашнему набору.
+- **640+ упражнений с техникой и видео.** В том числе куча движений с собственным весом и гантелями - как раз то, что нужно домашнему набору.
 - **Личные рекорды сами отмечаются.** Новый максимум в подтягиваниях дома приложение заметит без тебя.
 - **AI-тренер** соберёт контекст из твоих тренировок и подскажет, как прогрессировать с тем инвентарём, что есть.
 
@@ -161,7 +161,7 @@ Body Forge doesn't ask where you train. It turns any place into a system, becaus
 
 - **Real-time set logging.** Weight, reps, rest - locked in instantly, whether it's dumbbells on the balcony or a barbell at the gym. Growth arrows compare your current set against last session on the spot.
 - **Fully offline.** Data writes to the device right away, no connection needed. Training at home with no wifi or in a basement gym with no signal - it's all recorded anyway, and the sync heads to the cloud later.
-- **680 exercises with form cues and video.** Including a stack of bodyweight and dumbbell movements, exactly what a home kit calls for.
+- **640+ exercises with form cues and video.** Including a stack of bodyweight and dumbbell movements, exactly what a home kit calls for.
 - **Personal records flag themselves.** Hit a new pull-up max at home and the app catches it without you.
 - **The AI coach** pulls context from your training and tells you how to keep progressing with the gear you actually own.
 

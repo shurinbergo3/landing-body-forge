@@ -155,19 +155,24 @@ export default function Gallery({
             <ChevronRight />
           </button>
 
-          <div className="mt-2 flex justify-center gap-2">
+          <div className="mt-2 flex justify-center gap-1">
             {shots.map((s, i) => (
               <button
                 key={s.src}
                 type="button"
                 onClick={() => scrollTo(i)}
                 aria-label={`${i + 1}`}
-                className={`h-1.5 rounded-full transition-all ${
-                  i === active
-                    ? "w-6 bg-white"
-                    : "w-1.5 bg-white/25 hover:bg-white/40"
-                }`}
-              />
+                aria-current={i === active ? "true" : undefined}
+                className="group flex h-8 items-center px-1"
+              >
+                <span
+                  className={`block h-1.5 rounded-full transition-all ${
+                    i === active
+                      ? "w-6 bg-white"
+                      : "w-1.5 bg-white/25 group-hover:bg-white/40"
+                  }`}
+                />
+              </button>
             ))}
           </div>
         </div>

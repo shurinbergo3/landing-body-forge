@@ -89,7 +89,7 @@ const post: BlogPost = {
 Собрать программу на бумаге - полдела. Дальше её нужно вести, помнить прошлые веса и видеть, движешься ли ты вперёд. Тут и приходит [Body Forge](/ru/blog/supersets-circuits).
 
 - Готовые программы под старт: сплиты, фулбади, силовые, суперсеты, круговые. Не хочешь собирать сам - бери готовое и жми "старт".
-- 680 упражнений с техникой и видео. Не знаешь, чем заменить движение - листаешь библиотеку и подбираешь.
+- 640+ упражнений с техникой и видео. Не знаешь, чем заменить движение - листаешь библиотеку и подбираешь.
 - Можно собрать свою программу из этих упражнений под свою частоту и цель.
 - Каждый подход пишется в реальном времени, а стрелки роста сравнивают его с прошлой сессией - двойная прогрессия работает сама собой.
 - Таймер отдыха в Dynamic Island держит паузы под контролем, чтобы силовая не превращалась в посиделки.
@@ -205,7 +205,7 @@ Before you build your own, look at where nearly everyone trips.
 Writing a plan on paper is half the job. After that you have to run it, remember your past weights, and see whether you're moving forward. That's where [Body Forge](/blog/supersets-circuits) comes in.
 
 - Ready-made programs to start: splits, full body, strength, supersets, circuits. Don't want to build your own? Grab one and hit start.
-- 680 exercises with form cues and video. Not sure how to swap a movement? Scroll the library and pick.
+- 640+ exercises with form cues and video. Not sure how to swap a movement? Scroll the library and pick.
 - You can also build your own program from those exercises around your frequency and goal.
 - Every set logs in real time, and growth arrows compare it to last session - double progression runs itself.
 - The rest timer in the Dynamic Island keeps your breaks in check so strength work doesn't turn into a hangout.

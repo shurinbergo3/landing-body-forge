@@ -62,7 +62,7 @@ const post: BlogPost = {
 - Журнал подходов фиксирует вес, повторы и отдых мгновенно, а стрелки роста сравнивают текущий сет с прошлой сессией - видно, растёт ли объём с толком.
 - История по каждому упражнению всегда под рукой: открыл, посмотрел, сколько рабочих подходов на группу набрал за неделю.
 - Личные рекорды отмечаются сами - удобный маркер, что объёма хватает и он даёт эффект.
-- 680 упражнений с техникой, чтобы грамотно распределить объём по движениям, а не долбить одну и ту же жимовую вариацию.
+- 640+ упражнений с техникой, чтобы грамотно распределить объём по движениям, а не долбить одну и ту же жимовую вариацию.
 
 Ни рекламы, ни навязанных подписок. Просто твоя реальная нагрузка в цифрах, по которой видно, недобираешь ты или уже перебрал.
 
@@ -151,7 +151,7 @@ This is where an app that counts for you earns its keep. [Body Forge](/blog/full
 - The set log captures weight, reps, and rest instantly, and growth arrows compare the current set to last session, so you see whether your volume is building with purpose.
 - Per-exercise history is always on hand: open it and see how many working sets per group you racked up this week.
 - Personal records flag themselves - a handy marker that your volume is enough and it's paying off.
-- 680 exercises with form cues so you can spread volume smartly across movements instead of hammering the same press variation.
+- 640+ exercises with form cues so you can spread volume smartly across movements instead of hammering the same press variation.
 
 No ads, no forced subscriptions. Just your real load in numbers, so you can tell whether you're falling short or already going overboard.
 

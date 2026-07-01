@@ -64,7 +64,7 @@ Body Forge построен вокруг одной идеи: ты не долж
 - Прошлый результат по упражнению всегда перед глазами, а стрелки роста сравнивают текущий подход с прошлой сессией на лету. Больше - зелёная стрелка, меньше - ты видишь это сразу и можешь дожать.
 - Личные рекорды отмечаются сами. Новый максимум - и приложение заметило его без тебя.
 - Таймер отдыха живёт в Dynamic Island и на экране блокировки, а хаптик подсказывает, когда пора обратно к штанге. Никаких растянутых пауз по три минуты.
-- 680 упражнений с техникой и видео, если решишь сменить движение и не потерять историю.
+- 640+ упражнений с техникой и видео, если решишь сменить движение и не потерять историю.
 
 Без рекламы, без навязанных подписок. Просто данные, которые превращают "вроде пашу" в конкретные цифры прогресса за квартал.
 
@@ -155,7 +155,7 @@ Body Forge is built around one idea: you shouldn't have to remember anything. Th
 - Your last result for the lift is always in view, and growth arrows compare your current set to last session on the fly. More is green, less and you see it right away so you can grind out the extra rep.
 - Personal records flag themselves. New max, and the app caught it without you.
 - The rest timer lives in the Dynamic Island and on your lock screen, with a haptic tap when it's time to get back under the bar. No accidental three-minute breaks.
-- 680 exercises with form cues and video, so you can swap a movement and keep your history intact.
+- 640+ exercises with form cues and video, so you can swap a movement and keep your history intact.
 
 No ads, no forced subscriptions. Just data that turns "I think I'm grinding" into hard numbers of progress over a quarter.
 

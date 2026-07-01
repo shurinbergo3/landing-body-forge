@@ -5,9 +5,14 @@ import Nav from "@/components/Nav";
 import Hero from "@/components/Hero";
 import Marquee from "@/components/Marquee";
 import Stats from "@/components/Stats";
+import Reframe from "@/components/Reframe";
+import Loop from "@/components/Loop";
 import Features from "@/components/Features";
 import ActiveShowcase from "@/components/ActiveShowcase";
 import AICoach from "@/components/AICoach";
+import Purpose from "@/components/Purpose";
+import Library from "@/components/Library";
+import Programs from "@/components/Programs";
 import Ecosystem from "@/components/Ecosystem";
 import Progress from "@/components/Progress";
 import Gallery from "@/components/Gallery";
@@ -97,12 +102,17 @@ export default async function Home({
       <main>
         <Hero dict={dict} locale={locale} />
         <Marquee dict={dict} />
-        <Stats dict={dict} />
+        <Reframe dict={dict} />
+        <Loop dict={dict} />
         <Features dict={dict} />
         <ActiveShowcase dict={dict} />
         <AICoach dict={dict} />
-        <Ecosystem dict={dict} locale={locale} />
+        <Purpose dict={dict} />
+        <Library dict={dict} />
+        <Programs dict={dict} />
         <Progress dict={dict} />
+        <Ecosystem dict={dict} locale={locale} />
+        <Stats dict={dict} />
         <Gallery dict={dict} locale={locale} />
         <Reviews dict={dict} reviews={reviews} rating={rating} />
         <DownloadCTA dict={dict} locale={locale} />

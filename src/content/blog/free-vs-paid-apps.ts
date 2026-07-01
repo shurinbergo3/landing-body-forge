@@ -64,7 +64,7 @@ const post: BlogPost = {
 - Нет рекламы. Совсем. Никаких баннеров между подходами.
 - Нет навязанных подписок и тёмных триалов, которые сами списывают деньги.
 - Данные сперва живут на твоём устройстве, синхронизация в облако идёт при сети - приватность не как галочка, а как устройство приложения.
-- AI-тренер на gpt-5-mini, автоматические рекорды, умный таймер отдыха в Dynamic Island, 680 упражнений с техникой - функции работают на твой результат, а не на удержание.
+- AI-тренер на gpt-5-mini, автоматические рекорды, умный таймер отдыха в Dynamic Island, 640+ упражнений с техникой - функции работают на твой результат, а не на удержание.
 
 Звучит слишком хорошо? Разумный вопрос - именно поэтому есть [разбор AI-тренера против живого](/ru/blog/ai-coach-vs-trainer), где я так же честно говорю про ограничения. Честность в обе стороны, без маркетингового глянца.
 
@@ -155,7 +155,7 @@ Pass the checklist, and the app can hold your training history for years. Fail o
 - No ads. None. No banners between sets.
 - No forced subscriptions and no dark trials that auto-charge you.
 - Data lives on your device first, syncing to the cloud when there's a connection - privacy as architecture, not a checkbox.
-- An AI coach on gpt-5-mini, automatic records, a smart rest timer in the Dynamic Island, 680 exercises with form cues - features that serve your results, not your retention.
+- An AI coach on gpt-5-mini, automatic records, a smart rest timer in the Dynamic Island, 640+ exercises with form cues - features that serve your results, not your retention.
 
 Sounds too good? Fair - which is why there's a [breakdown of AI coach vs a human](/blog/ai-coach-vs-trainer) where I'm just as honest about the limits. Honesty in both directions, no marketing gloss.
 

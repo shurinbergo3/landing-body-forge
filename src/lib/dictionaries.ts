@@ -30,6 +30,45 @@ export type Dict = {
   };
   marquee: string[];
   stats: { value: string; label: string }[];
+  reframe: {
+    eyebrow: string;
+    titleLead: string;
+    titleAccent: string;
+    sub: string;
+    points: { title: string; text: string }[];
+  };
+  loop: {
+    eyebrow: string;
+    title: string;
+    accentWord: string;
+    sub: string;
+    repeat: string;
+    steps: { tag: string; title: string; text: string }[];
+  };
+  purpose: {
+    eyebrow: string;
+    title: string;
+    accentWord: string;
+    sub: string;
+    outcomes: { icon: string; title: string; text: string }[];
+  };
+  library: {
+    eyebrow: string;
+    title: string;
+    accentWord: string;
+    sub: string;
+    headline: string;
+    headlineHint: string;
+    categories: { icon: string; title: string; text: string; tag: string }[];
+  };
+  programs: {
+    eyebrow: string;
+    title: string;
+    accentWord: string;
+    sub: string;
+    goals: string[];
+    points: { title: string; text: string }[];
+  };
   features: {
     eyebrow: string;
     title: string;
@@ -138,9 +177,9 @@ const ru: Dict = {
   nav: {
     links: [
       { href: "#features", label: "Возможности" },
-      { href: "#active", label: "Тренировка" },
       { href: "#ai", label: "AI-тренер" },
-      { href: "#ecosystem", label: "Экосистема" },
+      { href: "#library", label: "Справочник" },
+      { href: "#programs", label: "Программы" },
       { href: "#faq", label: "Вопросы" },
     ],
     download: "Скачать",
@@ -158,7 +197,7 @@ const ru: Dict = {
     badge: "App Store",
   },
   marquee: [
-    "680 упражнений с техникой",
+    "640+ упражнений с техникой",
     "AI-тренер на gpt-5-mini",
     "Dynamic Island",
     "Apple Watch",
@@ -168,11 +207,150 @@ const ru: Dict = {
     "Без рекламы",
   ],
   stats: [
-    { value: "680", label: "упражнений с техникой и видео" },
+    { value: "640+", label: "упражнений с техникой и видео" },
     { value: "100%", label: "офлайн - данные сперва на устройстве" },
     { value: "4", label: "языка интерфейса" },
     { value: "0", label: "рекламы и навязанных подписок" },
   ],
+  reframe: {
+    eyebrow: "Не просто дневник",
+    titleLead: "Другие приложения записывают.",
+    titleAccent: "Body Forge понимает.",
+    sub: "Обычный трекер хранит твои цифры и оставляет тебя с ними один на один. Body Forge каждый день читает эти данные, находит смысл и говорит, что делать дальше.",
+    points: [
+      {
+        title: "Видит контекст",
+        text: "Не отдельный подход, а всю картину: тренировки, сон, пульс и восстановление вместе.",
+      },
+      {
+        title: "Считает готовность",
+        text: "Каждое утро выносит один вердикт - можно грузиться или сегодня беречь себя.",
+      },
+      {
+        title: "Говорит, что делать",
+        text: "Не графики, которые надо расшифровывать, а конкретный шаг: +2.5 кг, добить повторы или делоад.",
+      },
+    ],
+  },
+  loop: {
+    eyebrow: "Как это работает",
+    title: "Один цикл, который крутится",
+    accentWord: "каждый день",
+    sub: "Ты просто тренируешься и живёшь. Всё остальное приложение делает само - и с каждым днём знает тебя лучше.",
+    repeat: "И так каждый день - точнее с каждым разом",
+    steps: [
+      {
+        tag: "01",
+        title: "Собирает данные",
+        text: "Подходы, вес и рекорды с тренировки. Пульс, сон, HRV, шаги и калории - из Apple Health. Замеры и вес тела. Ничего не нужно вносить руками.",
+      },
+      {
+        tag: "02",
+        title: "ИИ анализирует",
+        text: "Смотрит динамику за 6 недель, ловит плато, считает готовность из сна и стресса, сверяет нагрузку недели. Здоровье - в приоритете над прогрессом.",
+      },
+      {
+        tag: "03",
+        title: "Даёт решение",
+        text: "Возвращает не абстракции, а конкретику: сколько ставить сегодня, где добавить, где отступить и когда пора отдохнуть.",
+      },
+    ],
+  },
+  purpose: {
+    eyebrow: "Зачем это всё",
+    title: "Чтобы ты рос стабильно, а не",
+    accentWord: "наугад",
+    sub: "Весь этот анализ существует ради одного - чтобы каждая тренировка вела вперёд, а не по кругу. Без догадок, без перетрена, без потерянных месяцев.",
+    outcomes: [
+      {
+        icon: "📈",
+        title: "Нет застоя",
+        text: "Детектор плато замечает, где вес встал, раньше тебя - и предлагает выход, пока ты не потерял мотивацию.",
+      },
+      {
+        icon: "🛡",
+        title: "Нет перетрена",
+        text: "В красный день приложение само срежет нагрузку. Прогресс не ломается о выгорание и травмы.",
+      },
+      {
+        icon: "🎯",
+        title: "Рост по данным",
+        text: "Прибавка веса и повторов - не на ощущениях, а по реальной динамике твоих топ-упражнений.",
+      },
+      {
+        icon: "💪",
+        title: "Форма, которую видно",
+        text: "Замеры и вес во времени показывают, что тело меняется - а не только цифры в дневнике.",
+      },
+    ],
+  },
+  library: {
+    eyebrow: "Справочник",
+    title: "База знаний,",
+    accentWord: "а не только дневник",
+    sub: "Внутри - целая библиотека, чтобы не гуглить на ходу. Техника, добавки, гормоны, сон и питание собраны в одном месте и объяснены человеческим языком.",
+    headline: "640+ упражнений",
+    headlineHint: "техника, разбор и видео · 9 категорий",
+    categories: [
+      {
+        icon: "🏋",
+        title: "Упражнения",
+        text: "Техника, целевые мышцы и видео-разборы движений. Понятно, как делать правильно.",
+        tag: "640+ · 9 категорий",
+      },
+      {
+        icon: "📋",
+        title: "Тренировки",
+        text: "Гид по построению занятия: как собрать сплит, сколько подходов и как вести прогрессию.",
+        tag: "Гид",
+      },
+      {
+        icon: "💊",
+        title: "Бады",
+        text: "Разбор добавок без маркетинга: что реально работает, как и зачем принимать.",
+        tag: "Топ добавок",
+      },
+      {
+        icon: "❤",
+        title: "Гормоны",
+        text: "Как тестостерон, кортизол и сон влияют на рост и восстановление - и что от тебя зависит.",
+        tag: "Влияние на жизнь",
+      },
+      {
+        icon: "🌙",
+        title: "Сон",
+        text: "Почему без сна нет мышц. Как восстановление решает больше, чем лишний подход.",
+        tag: "Восстановление",
+      },
+      {
+        icon: "🥗",
+        title: "Питание",
+        text: "Белок, калории и дефицит по делу. Как есть под свою цель без фанатизма и голодовок.",
+        tag: "Под цель",
+      },
+    ],
+  },
+  programs: {
+    eyebrow: "Программы",
+    title: "Готовый план под",
+    accentWord: "любую цель",
+    sub: "29 программ на массу, силу и жиросжигание - от первого дня в зале до продвинутого уровня. Активируй за пару касаний или собери свою.",
+    goals: ["Масса", "Сила", "Жиросжигание", "Для новичков", "Продвинутым"],
+    points: [
+      {
+        title: "По уровню и опыту",
+        text: "От «без опыта» до 6+ месяцев. Программа честно говорит, на кого она рассчитана.",
+      },
+      {
+        title: "Активная программа ведёт",
+        text: "Приложение знает, какой сегодня день сплита, и открывает тренировку без лишних вопросов.",
+      },
+      {
+        title: "Или собери свою",
+        text: "Сплиты, суперсеты, силовые, кардио и круговые - конструктор под твой график.",
+      },
+    ],
+  },
   features: {
     eyebrow: "Возможности",
     title: "Всё для тренировки. Ничего лишнего.",
@@ -252,7 +430,7 @@ const ru: Dict = {
           {
             tag: "Справочник",
             title: "База знаний под рукой",
-            text: "680 упражнений с техникой и видео, плюс гайды по бадам, гормонам, сну и питанию.",
+            text: "640+ упражнений с техникой и видео, плюс гайды по бадам, гормонам, сну и питанию.",
           },
         ],
       },
@@ -549,9 +727,9 @@ const en: Dict = {
   nav: {
     links: [
       { href: "#features", label: "Features" },
-      { href: "#active", label: "Workout" },
       { href: "#ai", label: "AI Coach" },
-      { href: "#ecosystem", label: "Ecosystem" },
+      { href: "#library", label: "Library" },
+      { href: "#programs", label: "Programs" },
       { href: "#faq", label: "FAQ" },
     ],
     download: "Download",
@@ -569,7 +747,7 @@ const en: Dict = {
     badge: "App Store",
   },
   marquee: [
-    "680 exercises with form",
+    "640+ exercises with form",
     "AI coach on gpt-5-mini",
     "Dynamic Island",
     "Apple Watch",
@@ -579,11 +757,150 @@ const en: Dict = {
     "No ads",
   ],
   stats: [
-    { value: "680", label: "exercises with form and video" },
+    { value: "640+", label: "exercises with form and video" },
     { value: "100%", label: "offline - your data lives on device first" },
     { value: "4", label: "interface languages" },
     { value: "0", label: "ads or forced subscriptions" },
   ],
+  reframe: {
+    eyebrow: "Not just a log",
+    titleLead: "Other apps record.",
+    titleAccent: "Body Forge understands.",
+    sub: "A plain tracker stores your numbers and leaves you alone with them. Body Forge reads that data every day, finds the meaning and tells you what to do next.",
+    points: [
+      {
+        title: "Sees the context",
+        text: "Not a single set, but the whole picture: training, sleep, heart rate and recovery together.",
+      },
+      {
+        title: "Reads your readiness",
+        text: "Every morning it gives one verdict - push today, or protect yourself.",
+      },
+      {
+        title: "Tells you what to do",
+        text: "Not charts to decode, but a concrete move: +2.5 kg, fill the reps or deload.",
+      },
+    ],
+  },
+  loop: {
+    eyebrow: "How it works",
+    title: "One loop that runs",
+    accentWord: "every day",
+    sub: "You just train and live. The app does the rest by itself - and knows you better with every day.",
+    repeat: "And it repeats every single day - sharper each time",
+    steps: [
+      {
+        tag: "01",
+        title: "It collects data",
+        text: "Sets, weight and records from your workout. Heart rate, sleep, HRV, steps and calories from Apple Health. Body measurements. Nothing typed in by hand.",
+      },
+      {
+        tag: "02",
+        title: "The AI analyzes",
+        text: "It reads a 6-week trend, catches plateaus, computes readiness from sleep and stress, weighs your weekly load. Health comes before progress.",
+      },
+      {
+        tag: "03",
+        title: "It gives a decision",
+        text: "Back comes no abstraction, but specifics: what to load today, where to push, where to back off and when to rest.",
+      },
+    ],
+  },
+  purpose: {
+    eyebrow: "What it's all for",
+    title: "So you grow steadily, not by",
+    accentWord: "guesswork",
+    sub: "All this analysis exists for one thing - so every workout moves you forward, not in circles. No guessing, no overtraining, no lost months.",
+    outcomes: [
+      {
+        icon: "📈",
+        title: "No stalling",
+        text: "The plateau detector spots a stuck lift before you do - and offers a way out before you lose motivation.",
+      },
+      {
+        icon: "🛡",
+        title: "No overtraining",
+        text: "On a red day the app trims the load itself. Progress doesn't break on burnout or injury.",
+      },
+      {
+        icon: "🎯",
+        title: "Data-driven gains",
+        text: "Adding weight and reps isn't a feeling - it's the real trend of your top lifts.",
+      },
+      {
+        icon: "💪",
+        title: "A shape you can see",
+        text: "Measurements and weight over time show your body is changing - not just numbers in a log.",
+      },
+    ],
+  },
+  library: {
+    eyebrow: "Library",
+    title: "A knowledge base,",
+    accentWord: "not just a log",
+    sub: "Inside is a whole library so you don't google mid-set. Form, supplements, hormones, sleep and nutrition, all in one place and explained in plain language.",
+    headline: "640+ exercises",
+    headlineHint: "form, breakdown and video · 9 categories",
+    categories: [
+      {
+        icon: "🏋",
+        title: "Exercises",
+        text: "Form, target muscles and video breakdowns of the movements. Clear on how to do it right.",
+        tag: "640+ · 9 categories",
+      },
+      {
+        icon: "📋",
+        title: "Training",
+        text: "A guide to building a session: how to set a split, how many sets and how to progress.",
+        tag: "Guide",
+      },
+      {
+        icon: "💊",
+        title: "Supplements",
+        text: "Supplements without the marketing: what actually works, how and why to take it.",
+        tag: "Top picks",
+      },
+      {
+        icon: "❤",
+        title: "Hormones",
+        text: "How testosterone, cortisol and sleep shape growth and recovery - and what's in your control.",
+        tag: "Real impact",
+      },
+      {
+        icon: "🌙",
+        title: "Sleep",
+        text: "Why there's no muscle without sleep. How recovery decides more than an extra set.",
+        tag: "Recovery",
+      },
+      {
+        icon: "🥗",
+        title: "Nutrition",
+        text: "Protein, calories and deficit that make sense. How to eat for your goal without starving.",
+        tag: "For your goal",
+      },
+    ],
+  },
+  programs: {
+    eyebrow: "Programs",
+    title: "A ready plan for",
+    accentWord: "any goal",
+    sub: "29 programs for mass, strength and fat loss - from your first day in the gym to advanced. Activate in two taps or build your own.",
+    goals: ["Mass", "Strength", "Fat loss", "For beginners", "For advanced"],
+    points: [
+      {
+        title: "By level and experience",
+        text: "From no experience to 6+ months. Each program is honest about who it's for.",
+      },
+      {
+        title: "The active program leads",
+        text: "The app knows which split day is today and opens your workout with no questions asked.",
+      },
+      {
+        title: "Or build your own",
+        text: "Splits, supersets, strength, cardio and circuits - a builder for your schedule.",
+      },
+    ],
+  },
   features: {
     eyebrow: "Features",
     title: "Everything for the lift. Nothing else.",
@@ -663,7 +980,7 @@ const en: Dict = {
           {
             tag: "Library",
             title: "A knowledge base on hand",
-            text: "680 exercises with form and video, plus guides on supplements, hormones, sleep and nutrition.",
+            text: "640+ exercises with form and video, plus guides on supplements, hormones, sleep and nutrition.",
           },
         ],
       },

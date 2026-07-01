@@ -78,10 +78,10 @@ export default async function BlogIndex({
             </p>
           </Reveal>
 
-          <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-14 grid auto-rows-fr gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {posts.map((post, i) => (
-              <Reveal key={post.slug} delay={(i % 3) * 0.05}>
-                <PostCard post={post} lang={l} dict={dict} featured={i === 0} />
+              <Reveal key={post.slug} delay={(i % 3) * 0.05} className="h-full min-w-0">
+                <PostCard post={post} lang={l} dict={dict} />
               </Reveal>
             ))}
           </div>

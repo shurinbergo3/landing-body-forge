@@ -1,17 +1,18 @@
 import Image from "next/image";
 
 type Props = {
-  src: string;
+  src?: string;
   alt: string;
   className?: string;
   priority?: boolean;
   glow?: boolean;
   video?: string;
   poster?: string;
+  placeholder?: string;
 };
 
 // Рамка iPhone Pro: полированный титановый рельс со светлой кромкой и объёмными кнопками.
-export default function PhoneFrame({ src, alt, className = "", priority, glow, video, poster }: Props) {
+export default function PhoneFrame({ src, alt, className = "", priority, glow, video, poster, placeholder }: Props) {
   return (
     <div className={`relative ${className}`}>
       {glow && (
@@ -47,7 +48,20 @@ export default function PhoneFrame({ src, alt, className = "", priority, glow, v
           >
             {/* чёрный бортик экрана */}
             <div className="relative overflow-hidden rounded-[2.65rem] bg-black">
-              {video ? (
+              {!src && !video ? (
+                <div className="flex aspect-[420/912] w-full flex-col items-center justify-center gap-4 bg-gradient-to-b from-[#0e0f12] to-[#050506] px-6 text-center">
+                  <span className="absolute left-1/2 top-3 h-6 w-[34%] -translate-x-1/2 rounded-full bg-black" />
+                  <span className="grid h-14 w-14 place-items-center rounded-2xl border border-white/10 bg-volt/10 text-2xl text-volt">
+                    ▢
+                  </span>
+                  <p className="text-[13px] font-medium leading-snug text-ash-400">
+                    {placeholder ?? alt}
+                  </p>
+                  <span className="text-[11px] uppercase tracking-[0.18em] text-white/25">
+                    Скрин приложения
+                  </span>
+                </div>
+              ) : video ? (
                 <video
                   className="block h-auto w-full"
                   autoPlay
@@ -62,7 +76,7 @@ export default function PhoneFrame({ src, alt, className = "", priority, glow, v
                 </video>
               ) : (
                 <Image
-                  src={src}
+                  src={src as string}
                   alt={alt}
                   width={420}
                   height={912}

@@ -76,7 +76,7 @@ export default function Footer({
               href={`https://buildbyalex.com${locale === "en" ? "/en" : ""}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="group relative inline-flex items-center gap-4 self-start rounded-full border border-white/[0.09] bg-white/[0.02] py-2.5 pl-5 pr-2.5 transition-all duration-300 ease-apple hover:border-orange-brand/40 hover:bg-white/[0.04] lg:self-auto"
+              className="group relative inline-flex max-w-full items-center gap-2.5 self-start rounded-full border border-white/[0.09] bg-white/[0.02] py-2.5 pl-4 pr-2 transition-all duration-300 ease-apple hover:border-orange-brand/40 hover:bg-white/[0.04] sm:gap-4 sm:pl-5 sm:pr-2.5 lg:self-auto"
             >
               <span
                 className="pointer-events-none absolute -inset-px rounded-full opacity-0 blur-md transition-opacity duration-300 group-hover:opacity-100"

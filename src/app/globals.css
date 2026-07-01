@@ -15,12 +15,13 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: clip;
 }
 
 body {
   background: #000;
   color: #f4f5f6;
-  overflow-x: hidden;
+  overflow-x: clip;
   letter-spacing: -0.011em;
 }
 

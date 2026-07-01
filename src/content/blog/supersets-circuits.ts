@@ -56,7 +56,7 @@ const post: BlogPost = {
 - Готовые суперсеты и круговые в библиотеке программ. Открыл, начал, не думаешь о структуре.
 - Таймер отдыха живёт в Dynamic Island и на экране блокировки, хаптик подсказывает, когда пора на следующее движение. В круговой это критично - без него темп разваливается.
 - Каждый подход пишется в реальном времени, стрелки роста показывают, обыграл ты прошлую сессию или просел.
-- 680 упражнений с техникой под рукой, если решишь пересобрать связку.
+- 640+ упражнений с техникой под рукой, если решишь пересобрать связку.
 
 Без рекламы и навязанных подписок. Просто структура, которая держит тебя в темпе, когда времени в обрез.
 
@@ -139,7 +139,7 @@ Building pairs in your head, remembering what comes next, and not losing your pl
 - Prebuilt supersets and circuits in the program library. Open it, start, stop thinking about structure.
 - The rest timer lives in the Dynamic Island and on your lock screen, with a haptic that tells you when to move to the next movement. In a circuit that's critical - without it your pace falls apart.
 - Every set logs in real time, and growth arrows show whether you beat last session or slipped.
-- 680 exercises with form cues on hand if you want to rebuild a pairing.
+- 640+ exercises with form cues on hand if you want to rebuild a pairing.
 
 No ads, no forced subscriptions. Just structure that keeps you moving when time is tight.
 

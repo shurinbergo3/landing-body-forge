@@ -57,7 +57,7 @@ AI-тренер в [Body Forge](/ru/blog/how-to-build-workout-plan) работа
 - Видит твою историю подходов: какие веса, какие повторы, где ты застрял, где вырос.
 - Учитывает данные сна и шагов из Apple Health, когда советует нагрузку.
 - Отвечает на вопросы по ходу, помогает собрать программу и подсказывает, чем заменить упражнение.
-- Знает библиотеку из 680 упражнений с техникой и видео, так что рекомендация - это не абстракция, а конкретное движение с разбором.
+- Знает библиотеку из 640+ упражнений с техникой и видео, так что рекомендация - это не абстракция, а конкретное движение с разбором.
 
 При этом никакой рекламы и навязанных подписок. Приложение бесплатное, а AI-тренер - часть его, а не отдельная платная замануха. Если хочешь понять, как вообще выбирать между инструментами, посмотри разбор [бесплатных и платных приложений](/ru/blog/free-vs-paid-apps).
 
@@ -150,7 +150,7 @@ The AI coach in [Body Forge](/blog/how-to-build-workout-plan) runs on the gpt-5-
 - It reads your set history: what weights, what reps, where you stalled, where you grew.
 - It factors in sleep and step data from Apple Health when it suggests load.
 - It answers questions mid-session, helps you build a program, and tells you what to swap when a machine is taken.
-- It knows a library of 680 exercises with form cues and video, so a suggestion is a specific movement with a breakdown, not a vague idea.
+- It knows a library of 640+ exercises with form cues and video, so a suggestion is a specific movement with a breakdown, not a vague idea.
 
 And there's no advertising and no forced subscription. The app is free, and the AI coach is part of it, not a separate paywalled bait. If you want the bigger picture on choosing tools, read the breakdown of [free vs paid apps](/blog/free-vs-paid-apps).
 

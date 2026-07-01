@@ -59,7 +59,7 @@ const post: BlogPost = {
 - Прошлый результат по упражнению всегда перед глазами. Не надо вспоминать - надо просто побить.
 - Личные рекорды отмечаются сами. Новый максимум в приседе - и приложение это заметило без тебя.
 - Таймер отдыха живёт в Dynamic Island, чтобы ты не отдыхал по три минуты вместо девяноста секунд и не сливал интенсивность.
-- 680 упражнений с техникой под рукой, если решишь сменить движение и пойти по новому рычагу.
+- 640+ упражнений с техникой под рукой, если решишь сменить движение и пойти по новому рычагу.
 
 Никакой рекламы, никаких навязанных подписок. Просто данные, которые превращают "вроде пашу" в "вот мои плюс 12 кг в становой за квартал".
 
@@ -145,7 +145,7 @@ This is where an app that won't let you lie to yourself earns its place. [Body F
 - Your last result for the exercise is always in view. No recalling - just beat it.
 - Personal records flag themselves. New squat max? The app noticed it without you.
 - The rest timer lives in the Dynamic Island so you don't rest three minutes instead of ninety seconds and bleed off your intensity.
-- 680 exercises with form cues on hand if you decide to swap a movement and chase a new lever.
+- 640+ exercises with form cues on hand if you decide to swap a movement and chase a new lever.
 
 No ads, no forced subscriptions. Just data that turns "I think I'm grinding" into "here's my extra 12 kg on the deadlift this quarter."
 

@@ -1,0 +1,13 @@
+node_modules
+.next
+.git
+.github
+npm-debug.log
+README.md
+.gitignore
+Dockerfile
+.dockerignore
+.vercel
+.idea
+.vscode
+tsconfig.tsbuildinfo

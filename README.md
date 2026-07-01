@@ -1,52 +1,53 @@
-# Body Forge - презентационный лендинг
+# Body Forge - Marketing Landing Page
 
-Двуязычный (RU / EN) лендинг для iOS-приложения Body Forge. Next.js (App Router) + Tailwind CSS + Framer Motion. Тёмная OLED-эстетика приложения, неоновый volt-акцент, bento-сетка, плавные scroll-анимации и наклонённые мокапы.
+A bilingual (RU / EN) landing page for the Body Forge iOS app. Built with Next.js (App Router) + Tailwind CSS + Framer Motion. Dark OLED aesthetic matching the app, neon volt accent, bento grid, smooth scroll animations and tilted device mockups.
 
-## Запуск
+## Getting started
 
 ```bash
 npm install
-npm run dev      # http://localhost:3000 (редиректит на /ru)
+npm run dev      # http://localhost:3000 (redirects to /ru)
 ```
 
-Сборка и прод-режим:
+Build and production:
 
 ```bash
 npm run build
 npm start
 ```
 
-## Языки
+## Languages
 
-- `/ru` - русская версия
-- `/en` - английская версия
+- `/ru` - Russian version
+- `/en` - English version
 
-Переключатель языка в шапке. Локаль выбирается автоматически по заголовку браузера (`src/middleware.ts`), затем закрепляется в URL. Весь текст лежит в `src/lib/dictionaries.ts` - редактировать копирайтинг нужно там.
+The language switcher lives in the header. The locale is detected automatically from the browser's `Accept-Language` header (`src/middleware.ts`), then pinned to the URL. All copy is stored in `src/lib/dictionaries.ts` - edit the wording there.
 
-## Где что менять
+## Where to change what
 
-| Что | Файл |
+| What | File |
 | --- | --- |
-| Тексты RU/EN | `src/lib/dictionaries.ts` |
-| Ссылка на App Store, почта поддержки | `src/lib/config.ts` |
-| Цвета, шрифты, анимации | `tailwind.config.ts`, `src/app/globals.css` |
-| Секции страницы | `src/components/*`, сборка в `src/app/[locale]/page.tsx` |
-| Картинки (скриншоты, лого) | `public/` |
+| RU/EN copy | `src/lib/dictionaries.ts` |
+| App Store link, support email | `src/lib/config.ts` |
+| Colors, fonts, animations | `tailwind.config.ts`, `src/app/globals.css` |
+| Page sections | `src/components/*`, composed in `src/app/[locale]/page.tsx` |
+| Images (screenshots, logo) | `public/` |
 
 ### App Store
 
-Приложение: **Body Forge - AI Fitness Coach**, `id6761138589`.
-Ссылки заданы в `src/lib/config.ts` (отдельно для ru/us). Если появится единый
-домен или почта поддержки - поменять там же (сейчас `support@bodyforge.app` -
-плейсхолдер).
+The app: **Body Forge - AI Fitness Coach**, `id6761138589`.
+Links are set in `src/lib/config.ts` (separate for ru/us). If a single domain or
+support email appears later, change it there (`support@bodyforge.app` is currently
+a placeholder).
 
-## Деплой
+## Deployment
 
-Проект готов к Vercel из коробки: `Framework Preset = Next.js`, без доп. настроек.
-Перед публикацией укажи реальный домен в `metadataBase` (`src/app/[locale]/layout.tsx`).
+The project is ready for Vercel out of the box: `Framework Preset = Next.js`, no extra
+setup. Before publishing, set the real domain in `metadataBase`
+(`src/app/[locale]/layout.tsx`).
 
-## Ассеты
+## Assets
 
-- `public/logo/` - логотип
-- `public/screens/` - чистые скриншоты экранов (в кастомных рамках iPhone)
-- `public/shots/{ru,en}/` - готовые маркетинговые композиции и картинка экосистемы
+- `public/logo/` - logo
+- `public/screens/` - clean screen captures (in custom iPhone frames)
+- `public/shots/{ru,en}/` - ready-made marketing compositions and the ecosystem image

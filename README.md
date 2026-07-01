@@ -6,7 +6,7 @@ A bilingual (RU / EN) landing page for the Body Forge iOS app. Built with Next.j
 
 ```bash
 npm install
-npm run dev      # http://localhost:3000 (redirects to /ru)
+npm run dev      # http://localhost:3000 (Russian by default)
 ```
 
 Build and production:
@@ -18,10 +18,10 @@ npm start
 
 ## Languages
 
-- `/ru` - Russian version
+- `/` - Russian version (default, no locale prefix)
 - `/en` - English version
 
-The language switcher lives in the header. The locale is detected automatically from the browser's `Accept-Language` header (`src/middleware.ts`), then pinned to the URL. All copy is stored in `src/lib/dictionaries.ts` - edit the wording there.
+The language switcher lives in the header. Russian is served on the clean root URL: `src/middleware.ts` rewrites `/` to the Russian content internally and redirects any `/ru` URL back to `/` so there's no duplicate. English keeps the `/en` prefix. All copy is stored in `src/lib/dictionaries.ts` - edit the wording there.
 
 ## Where to change what
 
@@ -36,15 +36,18 @@ The language switcher lives in the header. The locale is detected automatically 
 ### App Store
 
 The app: **Body Forge - AI Fitness Coach**, `id6761138589`.
-Links are set in `src/lib/config.ts` (separate for ru/us). If a single domain or
-support email appears later, change it there (`support@bodyforge.app` is currently
-a placeholder).
+Links are set in `src/lib/config.ts` (separate for ru/us), along with the support
+email (`alex@buildbyalex.com`). Change them there if anything moves.
 
 ## Deployment
 
 The project is ready for Vercel out of the box: `Framework Preset = Next.js`, no extra
-setup. Before publishing, set the real domain in `metadataBase`
-(`src/app/[locale]/layout.tsx`).
+setup. The canonical domain (`https://bodyforges.com`) is already set in `metadataBase`
+(`src/app/[locale]/layout.tsx`) - change it there if the domain moves.
+
+For a self-hosted setup there's a Docker build (`output: "standalone"` in
+`next.config.mjs`). The `Dockerfile` produces a slim runtime image, and
+`.github/workflows/docker.yml` builds and pushes it to GHCR on every push to `main`.
 
 ## Assets
 

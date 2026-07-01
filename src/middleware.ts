@@ -1,5 +1,4 @@
 import { NextRequest, NextResponse } from "next/server";
-import { locales } from "./lib/i18n";
 
 const PUBLIC_FILE = /\.(.*)$/;
 
@@ -15,18 +14,22 @@ export function middleware(req: NextRequest) {
     return;
   }
 
-  const hasLocale = locales.some(
-    (l) => pathname === `/${l}` || pathname.startsWith(`/${l}/`)
-  );
-  if (hasLocale) return;
+  // /ru живёт на чистом адресе - убираем префикс редиректом, чтобы не было дубля.
+  if (pathname === "/ru" || pathname.startsWith("/ru/")) {
+    const url = req.nextUrl.clone();
+    url.pathname = pathname.slice(3) || "/";
+    return NextResponse.redirect(url);
+  }
 
-  // выбираем локаль по заголовку браузера: русский - на /ru, остальные - на /en
-  const accept = req.headers.get("accept-language") ?? "";
-  const preferred = accept.toLowerCase().startsWith("ru") ? "ru" : "en";
+  // Английская версия остаётся с префиксом /en.
+  if (pathname === "/en" || pathname.startsWith("/en/")) {
+    return;
+  }
 
+  // Всё остальное отдаём русской версией, не меняя адрес в браузере.
   const url = req.nextUrl.clone();
-  url.pathname = `/${preferred}${pathname === "/" ? "" : pathname}`;
-  return NextResponse.redirect(url);
+  url.pathname = `/ru${pathname === "/" ? "" : pathname}`;
+  return NextResponse.rewrite(url);
 }
 
 export const config = {

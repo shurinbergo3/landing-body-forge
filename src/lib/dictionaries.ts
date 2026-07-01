@@ -134,7 +134,7 @@ const ru: Dict = {
     badge: "App Store",
   },
   marquee: [
-    "382 упражнения с техникой",
+    "680 упражнений с техникой",
     "AI-тренер на gpt-5-mini",
     "Dynamic Island",
     "Apple Watch",
@@ -144,7 +144,7 @@ const ru: Dict = {
     "Без рекламы",
   ],
   stats: [
-    { value: "382", label: "упражнения с техникой и видео" },
+    { value: "680", label: "упражнений с техникой и видео" },
     { value: "100%", label: "офлайн - данные сперва на устройстве" },
     { value: "4", label: "языка интерфейса" },
     { value: "0", label: "рекламы и навязанных подписок" },
@@ -228,7 +228,7 @@ const ru: Dict = {
           {
             tag: "Справочник",
             title: "База знаний под рукой",
-            text: "382 упражнения с техникой и видео, плюс гайды по бадам, гормонам, сну и питанию.",
+            text: "680 упражнений с техникой и видео, плюс гайды по бадам, гормонам, сну и питанию.",
           },
         ],
       },
@@ -520,7 +520,7 @@ const en: Dict = {
     badge: "App Store",
   },
   marquee: [
-    "382 exercises with form",
+    "680 exercises with form",
     "AI coach on gpt-5-mini",
     "Dynamic Island",
     "Apple Watch",
@@ -530,7 +530,7 @@ const en: Dict = {
     "No ads",
   ],
   stats: [
-    { value: "382", label: "exercises with form and video" },
+    { value: "680", label: "exercises with form and video" },
     { value: "100%", label: "offline - your data lives on device first" },
     { value: "4", label: "interface languages" },
     { value: "0", label: "ads or forced subscriptions" },
@@ -614,7 +614,7 @@ const en: Dict = {
           {
             tag: "Library",
             title: "A knowledge base on hand",
-            text: "382 exercises with form and video, plus guides on supplements, hormones, sleep and nutrition.",
+            text: "680 exercises with form and video, plus guides on supplements, hormones, sleep and nutrition.",
           },
         ],
       },

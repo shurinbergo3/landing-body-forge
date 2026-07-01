@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { getDict } from "@/lib/i18n";
+import { getDict, localePath } from "@/lib/i18n";
 import { privacyDocs, isPrivacyLocale } from "@/lib/privacy";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
@@ -35,7 +35,7 @@ export default async function PrivacyPage({
   return (
     <>
       <Nav dict={dict} locale={chrome} />
-      <PrivacyPolicy lang={lang} homeHref={`/${chrome}`} />
+      <PrivacyPolicy lang={lang} homeHref={localePath(chrome)} />
       <Footer dict={dict} locale={chrome} />
     </>
   );

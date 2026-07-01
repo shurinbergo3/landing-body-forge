@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { Dict } from "@/lib/dictionaries";
+import { localePath } from "@/lib/i18n";
 
 export default function Footer({
   dict,
@@ -15,7 +16,7 @@ export default function Footer({
       <div className="container-x">
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr]">
           <div>
-            <Link href={`/${locale}`} className="flex items-center gap-2.5">
+            <Link href={localePath(locale)} className="flex items-center gap-2.5">
               <Image
                 src="/logo/logo.png"
                 alt="Body Forge"

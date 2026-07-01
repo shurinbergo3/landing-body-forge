@@ -11,3 +11,8 @@ export function isLocale(value: string): value is Locale {
 export function getDict(locale: string): Dict {
   return dictionaries[isLocale(locale) ? locale : defaultLocale];
 }
+
+// Русский - дефолт без префикса в адресе, остальные локали с префиксом.
+export function localePath(locale: string): string {
+  return locale === defaultLocale ? "/" : `/${locale}`;
+}

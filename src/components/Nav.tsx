@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import type { Dict } from "@/lib/dictionaries";
 import { storeUrl } from "@/lib/config";
+import { localePath } from "@/lib/i18n";
 
 export default function Nav({ dict, locale }: { dict: Dict; locale: string }) {
   const [scrolled, setScrolled] = useState(false);
@@ -26,7 +27,7 @@ export default function Nav({ dict, locale }: { dict: Dict; locale: string }) {
             : "border border-transparent bg-transparent"
         }`}
       >
-        <Link href={`/${locale}`} className="flex items-center gap-2.5 pl-1">
+        <Link href={localePath(locale)} className="flex items-center gap-2.5 pl-1">
           <Image
             src="/logo/logo.png"
             alt="Body Forge"
@@ -55,7 +56,7 @@ export default function Nav({ dict, locale }: { dict: Dict; locale: string }) {
 
         <div className="flex items-center gap-2">
           <Link
-            href={`/${other}`}
+            href={localePath(other)}
             aria-label={dict.nav.langLabel}
             className="rounded-full border border-white/12 px-3 py-2 text-[13px] font-medium text-ash-300 transition-colors hover:border-white/25 hover:text-white"
           >

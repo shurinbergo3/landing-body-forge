@@ -106,7 +106,7 @@ export default async function Home({
         <Reframe dict={dict} />
         <Loop dict={dict} />
         <Features dict={dict} />
-        <ActiveShowcase dict={dict} />
+        <ActiveShowcase dict={dict} locale={locale} />
         <AICoach dict={dict} />
         <Purpose dict={dict} />
         <Library dict={dict} locale={locale} />

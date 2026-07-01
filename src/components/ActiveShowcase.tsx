@@ -6,7 +6,13 @@ import type { Dict } from "@/lib/dictionaries";
 import PhoneFrame from "./PhoneFrame";
 import Reveal from "./Reveal";
 
-export default function ActiveShowcase({ dict }: { dict: Dict }) {
+export default function ActiveShowcase({
+  dict,
+  locale,
+}: {
+  dict: Dict;
+  locale: string;
+}) {
   const ref = useRef<HTMLDivElement>(null);
   const reduce = useReducedMotion();
   const { scrollYProgress } = useScroll({
@@ -25,7 +31,11 @@ export default function ActiveShowcase({ dict }: { dict: Dict }) {
       <div className="glow-volt pointer-events-none absolute -left-40 top-1/3 h-[480px] w-[480px] blur-3xl" />
       <div className="container-x grid items-center gap-14 lg:grid-cols-2">
         <motion.div style={{ y, rotate }} className="order-2 mx-auto w-[clamp(15rem,38vw,20rem)] lg:order-1">
-          <PhoneFrame src="/screens/active.png" alt={dict.active.eyebrow} glow />
+          <PhoneFrame
+            src={`/screens/active-${locale === "ru" ? "ru" : "en"}.png`}
+            alt={dict.active.eyebrow}
+            glow
+          />
         </motion.div>
 
         <div className="order-1 lg:order-2">
